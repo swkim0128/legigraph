@@ -8,7 +8,6 @@ const meta: Meta<typeof Avatar> = {
     argTypes: {
         size: {
             control: { type: 'radio' },
-            options: ['sm', 'md', 'lg'],
         },
     },
 };
@@ -20,13 +19,6 @@ export const WithImage: Story = {
     args: {
         src: 'https://via.placeholder.com/150',
         alt: 'Profile Image',
-        size: 'md',
-    },
-};
-
-export const WithInitials: Story = {
-    args: {
-        initials: 'AB',
-        size: 'md',
+        size: 40,
     },
 };

@@ -6,10 +6,13 @@ const meta: Meta<typeof Input> = {
     component: Input,
     tags: ['autodocs'],
     argTypes: {
-        placeholder: {
+        id: {
             control: { type: 'text' },
         },
-        type: {
+        value: {
+            control: { type: 'text' },
+        },
+        placeholder: {
             control: { type: 'text' },
         },
     },
@@ -21,6 +24,5 @@ type Story = StoryObj<typeof Input>;
 export const Default: Story = {
     args: {
         placeholder: '입력하세요',
-        type: 'text',
     },
 };
