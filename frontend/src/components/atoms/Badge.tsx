@@ -3,7 +3,7 @@ import React from 'react';
 import clsx from 'clsx';
 
 export interface BadgeProps {
-    children: React.ReactNode;
+    children: string;
     variant?: 'default' | 'success' | 'warning' | 'error' | 'info';
     size?: 'sm' | 'md' | 'lg';
     className?: string;
