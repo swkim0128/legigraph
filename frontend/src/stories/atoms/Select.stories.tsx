@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Select from '@/components/atoms/Select';
+import { Select } from '@/components/atoms/index';
 
 const meta: Meta<typeof Select> = {
     title: 'Atoms/Select',
@@ -11,10 +11,5 @@ export default meta;
 type Story = StoryObj<typeof Select>;
 
 export const Default: Story = {
-    args: {
-        options: [
-            { key: '1', value: '1', label: '선택 1' },
-            { key: '2', value: '2', label: '선택 2' },
-        ],
-    },
+    args: {},
 };

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Radio from '@/components/atoms/Radio';
+import { Radio } from '@/components/atoms/index';
 
 const meta: Meta<typeof Radio> = {
     title: 'Atoms/Radio',
@@ -13,7 +13,6 @@ type Story = StoryObj<typeof Radio>;
 export const Default: Story = {
     args: {
         name: 'radio',
-        label: 'radio',
         value: 'radio',
     },
 };

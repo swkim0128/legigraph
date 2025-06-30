@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Link from '@/components/atoms/Link';
+import { Link } from '@/components/atoms/index';
 
 const meta: Meta<typeof Link> = {
     title: 'Atoms/Link',
@@ -14,6 +14,5 @@ export const Default: Story = {
     args: {
         href: 'https://example.com',
         children: 'Go to Example',
-        underline: true,
     },
 };

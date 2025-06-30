@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Skeleton from '@/components/atoms/Skeleton';
+import { Skeleton } from '@/components/atoms/index';
 
 const meta: Meta<typeof Skeleton> = {
     title: 'Atoms/Skeleton',
@@ -8,7 +8,6 @@ const meta: Meta<typeof Skeleton> = {
     argTypes: {
         width: { control: 'text' },
         height: { control: 'text' },
-        rounded: { control: 'boolean' },
     },
 };
 
@@ -19,6 +18,5 @@ export const Default: Story = {
     args: {
         width: 'w-48',
         height: 'h-6',
-        rounded: true,
     },
 };

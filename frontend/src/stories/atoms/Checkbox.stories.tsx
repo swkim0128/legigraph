@@ -1,14 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Checkbox from '@/components/atoms/Checkbox';
+import { Checkbox } from '@/components/atoms/index';
 
 const meta: Meta<typeof Checkbox> = {
     title: 'Atoms/Checkbox',
     component: Checkbox,
     tags: ['autodocs'],
     argTypes: {
-        label: {
-            control: { type: 'text' },
-        },
         disabled: {
             control: { type: 'boolean' },
         },
@@ -20,7 +17,6 @@ type Story = StoryObj<typeof Checkbox>;
 
 export const Default: Story = {
     args: {
-        label: '체크박스 예제',
         disabled: false,
     },
 };
